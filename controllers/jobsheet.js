@@ -53,7 +53,7 @@ exports.submitMany = async (req, res) => {
                 benar = benar + 1
             }
         }
-        req.status(200).json({
+        res.status(200).json({
             message: `benar ${benar} dari ${totalSoal} soal`
         })
     } catch (e) {
